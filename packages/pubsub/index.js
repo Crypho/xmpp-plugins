@@ -1,7 +1,7 @@
 'use strict'
 
 const {EventEmitter} = require('@xmpp/events')
-const {xml} = require('@xmpp/client')
+const xml = require('@xmpp/xml')
 
 const NS_PUBSUB = 'http://jabber.org/protocol/pubsub'
 const NS_PUBSUB_EVENT = `${NS_PUBSUB}#event`
@@ -106,13 +106,15 @@ class PubSubPlugin extends EventEmitter {
    */
   deleteNode(service, node) {
     const {iqCaller} = this.client
-    return iqCaller.request(
-      xml(
-        'iq',
-        {type: 'set', to: service},
-        xml('pubsub', {xmlns: NS_PUBSUB_OWNER}, xml('delete', {node}))
+    return iqCaller
+      .request(
+        xml(
+          'iq',
+          {type: 'set', to: service},
+          xml('pubsub', {xmlns: NS_PUBSUB_OWNER}, xml('delete', {node}))
+        )
       )
-    )
+      .then(() => undefined)
   }
 
   /**

@@ -16,9 +16,12 @@
   },
   "dependencies": {
     "@xmpp/events": "^0.7.0",
-    "@xmpp/client": "^0.7.0"
+    "@xmpp/xml": "^0.7.0"
   },
   "devDependencies": {
+    "@xmpp/iq": "^0.7.0",
+    "@xmpp/middleware": "^0.7.0",
+    "@xmpp/test": "^0.7.0"
   },
   "publishConfig": {
     "access": "public"
