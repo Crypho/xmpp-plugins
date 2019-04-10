@@ -1,6 +1,12 @@
 # vcard
 
-This plugin allow retrieving and updated vcards.
+This plugin allow retrieving and updating vcards.
+
+## Install
+
+```js
+npm install @xmpp-plugins/vcard
+```
 
 ## Usage
 

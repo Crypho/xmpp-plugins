@@ -167,6 +167,7 @@ class PubSubPlugin extends EventEmitter {
    * @typedef {{items: any[], rsm?: object}} ItemResult
    */
   /**
+   * Retrieve items from the pub-sub node.
    *
    * @param {string} service Service id
    * @param {string} node Pubsub node id

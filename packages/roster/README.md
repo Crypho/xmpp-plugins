@@ -9,44 +9,41 @@ Roster push is currently not supported.
 ## Install
 
 ```js
-npm install @xmpp-plugins/soter
+npm install @xmpp-plugins/roster
 ```
 
 ## Usage
 
-
 ```js
-const roster = client.plugin(require('@xmpp/plugins/roster'))
+import { client, xml } from "@xmpp/client";
+import setupRoster from "@xmpp-plugins/roster";
+
+const xmpp = client({service: 'wss://xmpp.example.com'})
+const roster = setupRoster(xmpp)
+
+roster.on('set', ({item, version}) => {
+  console.log(`Roster version ${version} received`, item)
+})
+
+const { version, items } = await roster.get()
+console.log(`Current roster version is ${version}`)
 ```
 
 ### Get
 
 Retrieve the roster.
 
-`ver` is optional and refers to [roster versioning](https://xmpp.org/rfcs/rfc6121.html#roster-versioning-request).
+`version` is optional and refers to [roster version](https://xmpp.org/rfcs/rfc6121.html#roster-versioning-request).
 
 ```js
-roster.get(ver).then([roster, newver] => {
+roster.get(version).then(roster => {
   if (!roster) {
     // the roster hasn't changed since last version
     return
   }
 
-  console.log(roster)
-  /*
-  [
-    {
-      jid: JID('foo@bar'), // see https://github.com/xmppjs/xmpp.js/tree/master/packages/jid
-      name: 'Foo Bar',
-      approved: false,
-      subscription: 'none',
-      groups: [],
-      ask: false,
-    },
-    ...
-
-  ]
-  */
+  const { version, items } = roster
+  console.log(version, roster)
 })
 ```
 
@@ -75,12 +72,9 @@ roster.remove(jid).then(() => {
 Emitted when a roster entry was added or updated.
 
 ```js
-roster.on('set', ([item, ver]) => {
+roster.on('set', ({item, version}) => {
   console.log(item)
-  // see Get
-
-  console.log(ver)
-  // new roster versioning string
+  console.log(version)
 })
 ```
 
@@ -89,11 +83,9 @@ roster.on('set', ([item, ver]) => {
 Emitted when a roster entry was removed.
 
 ```js
-roster.on('remove', ([jid, ver]) => {
+roster.on('remove', ({jid, version}) => {
   console.log(jid.toString(), 'removed')
-
-  console.log(ver)
-  // new roster versioning string
+  console.log(version)
 })
 ```
 
