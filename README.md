@@ -6,3 +6,6 @@
 
 This repository contains a number of plugins for [xmpp.js](https://github.com/xmppjs/xmpp.js)
 
+* [pubsub](packages/pubsub)
+* [roster](packages/roster)
+* [vcard](packages/vcard)
