@@ -1,0 +1,26 @@
+{
+  "name": "@xmpp-plugins/pubsub",
+  "description": "pubsub plugin for xmpp.js",
+  "repository": "github:xmppjs/xmpp-plugins",
+  "homepage": "https://github.com/xmppjs/xmpp-plugins/tree/master/packages/pubsub",
+  "bugs": "http://github.com/xmppjs/xmpp-plugins/issues",
+  "version": "1.0.0",
+  "license": "ISC",
+  "keywords": [
+    "XMPP",
+    "pubsub"
+  ],
+  "engines": {
+    "node": ">= 10.0.0",
+    "yarn": ">= 1.0.0"
+  },
+  "dependencies": {
+    "@xmpp/events": "^0.7.0",
+    "@xmpp/client": "^0.7.0"
+  },
+  "devDependencies": {
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

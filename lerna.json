@@ -1,0 +1,22 @@
+{
+  "version": "0.7.0",
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "packages": [
+    "packages/*"
+  ],
+  "command": {
+    "publish": {
+      "ignoreChanges": [
+        "examples/",
+        "example.js",
+        "test/",
+        "test.js",
+        ".eslintrc",
+        ".eslintignore",
+        "**/*.map",
+        "*.test.js"
+      ]
+    }
+  }
+}
