@@ -4,7 +4,7 @@
 import { client, xml } from "@xmpp/client";
 import setupPubSub from '@xmpp-plugins/pubsub
 
-const PUBSUB_SERVICE_ID = 'pubsub,.example.com'
+const PUBSUB_SERVICE_ID = 'pubsub.example.com'
 const PUBSUB_NODE = 'chatter'
 
 const xmpp = client({service: 'wss://xmpp.example.com'})
