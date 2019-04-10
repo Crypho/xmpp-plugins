@@ -34,8 +34,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "test": "ava",
-    "lint": "eslint .",
-    "preversion": "make bundle"
+    "lint": "eslint ."
   },
   "engines": {
     "node": ">= 10.0.0",
@@ -44,11 +43,5 @@
   "workspaces": [
     "packages/*"
   ],
-  "bundlesize": [
-    {
-      "path": "./packages/client/dist/xmpp.min.js",
-      "maxSize": "15 KB"
-    }
-  ],
-  "name": "xmpp.js"
+  "name": "xmpp-plugins"
 }
