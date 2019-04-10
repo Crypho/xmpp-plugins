@@ -11,8 +11,8 @@ npm install @xmpp-plugins/vcard
 ## Usage
 
 ```js
-import { client } from "@xmpp/client";
-import setupVcard from '@xmpp-plugins/vcard'
+import { client } from "@xmpp/client"
+import setupVcard from "@xmpp-plugins/vcard"
 
 const xmpp = client({service: 'wss://xmpp.example.com'})
 const vcardPlugin = setupVcard(xmpp)

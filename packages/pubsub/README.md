@@ -11,8 +11,8 @@ npm install @xmpp-plugins/pubsub
 ## Usage
 
 ```js
-import { client, xml } from "@xmpp/client";
-import setupPubSub from '@xmpp-plugins/pubsub
+import { client, xml } from "@xmpp/client"
+import setupPubSub from "@xmpp-plugins/pubsub"
 
 const PUBSUB_SERVICE_ID = 'pubsub.example.com'
 const PUBSUB_NODE = 'chatter'

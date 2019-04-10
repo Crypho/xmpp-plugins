@@ -15,8 +15,8 @@ npm install @xmpp-plugins/roster
 ## Usage
 
 ```js
-import { client, xml } from "@xmpp/client";
-import setupRoster from "@xmpp-plugins/roster";
+import { client, xml } from "@xmpp/client"
+import setupRoster from "@xmpp-plugins/roster"
 
 const xmpp = client({service: 'wss://xmpp.example.com'})
 const roster = setupRoster(xmpp)
