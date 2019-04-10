@@ -1274,6 +1274,11 @@
     "@xmpp/streamparser" "^0.0.6"
     "@xmpp/xml" "^0.7.0"
 
+"@xmpp/debug@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@xmpp/debug/-/debug-0.7.0.tgz#3c20f8b86d176a623ea66bc7f66cae1af209b93c"
+  integrity sha512-6Y8dlGXf6eJvqlG37I579yORzWnoNBAFghMSedse+CFCJP5QmSyJwCW1IAhPf8bdvEh67CDEXEkKzKIL7zwA/Q==
+
 "@xmpp/error@^0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@xmpp/error/-/error-0.7.0.tgz#46dec4504275554c2670601604b37056ed9510b7"
@@ -1403,6 +1408,17 @@
   integrity sha512-ByphSJ70KNOYBV1OTsodkpZs/L7P2d9okO5+5yUj6ZONuFL4aJ9UzdIyAYNotBnZUU/JDvPqrry2GhJK+z64uA==
   dependencies:
     "@xmpp/connection-tcp" "^0.7.0"
+
+"@xmpp/test@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@xmpp/test/-/test-0.7.0.tgz#55a09420799383839dd3641d2ab339319730232c"
+  integrity sha512-W3lVd1e3nGFI2NLnYlsZfbzO0hDTKUP69pmYxiXCQUBFI0G5ytoIlWoBCQnH094KVpQHxmwFm+APSRdD5jK1Lw==
+  dependencies:
+    "@xmpp/client" "^0.7.0"
+    "@xmpp/debug" "^0.7.0"
+    "@xmpp/events" "^0.7.0"
+    "@xmpp/jid" "^0.7.0"
+    "@xmpp/xml" "^0.7.0"
 
 "@xmpp/tls@^0.7.0":
   version "0.7.0"
