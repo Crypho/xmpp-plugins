@@ -4,7 +4,7 @@
   "repository": "github:xmppjs/xmpp-plugins",
   "homepage": "https://github.com/xmppjs/xmpp-plugins/tree/master/packages/pubsub",
   "bugs": "http://github.com/xmppjs/xmpp-plugins/issues",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "license": "ISC",
   "keywords": [
     "XMPP",
