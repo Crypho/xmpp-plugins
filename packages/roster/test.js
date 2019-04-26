@@ -3,24 +3,11 @@
 const test = require('ava')
 const setupRoster = require('.')
 const {context} = require('@xmpp/test')
-const xml = require('@xmpp/xml')
 const JID = require('@xmpp/jid')
 const _middleware = require('@xmpp/middleware')
 const _iqCallee = require('@xmpp/iq/callee')
 const _iqCaller = require('@xmpp/iq/caller')
 const {promise} = require('@xmpp/events')
-
-function fakeIncomingSet(context, child, attrs = {}) {
-  attrs.type = 'set'
-  return context.fakeIncomingIq(xml('iq', attrs, child)).then(stanza => {
-    const [child] = stanza.children
-    if (child) {
-      child.parent = null
-    }
-
-    return child
-  })
-}
 
 test.beforeEach(t => {
   t.context = context()
@@ -209,8 +196,7 @@ test.serial('push remove', t => {
   })
 
   // Trigger incoming push
-  fakeIncomingSet(
-    t.context,
+  t.context.fakeIncomingSet(
     <query xmlns="jabber:iq:roster" ver="v1">
       <item jid="foo@bar" subscription="remove" />
     </query>
@@ -233,8 +219,7 @@ test.serial('push set', t => {
     return null
   })
 
-  fakeIncomingSet(
-    t.context,
+  t.context.fakeIncomingSet(
     <query xmlns="jabber:iq:roster">
       <item jid="foo@bar" subscription="none" />
     </query>
