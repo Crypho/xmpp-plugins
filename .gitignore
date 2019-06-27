@@ -1,6 +1,6 @@
 .vscode/
 node_modules/
-**/dist/*
+**/dist
 server/localhost/
 server/prosody.err
 server/prosody.log

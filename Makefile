@@ -27,5 +27,5 @@ test-ci:
 clean:
 	./node_modules/.bin/lerna clean --yes
 	rm -rf node_modules/
-	rm -f packages/*/dist/*.js
+	rm -f packages/*/dist
 	rm -f lerna-debug.log
