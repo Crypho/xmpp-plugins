@@ -43,3 +43,11 @@ rules:
   # unicorn https://github.com/sindresorhus/eslint-plugin-unicorn
   unicorn/filename-case: 0
   unicorn/catch-error-name: ['error', {'name': 'err'}]
+
+overrides:
+  - files:
+      - rollup.config.js
+    parserOptions:
+      sourceType: module
+    rules:
+      node/no-unsupported-features/es-syntax: 0

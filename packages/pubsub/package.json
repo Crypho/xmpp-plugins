@@ -10,6 +10,15 @@
     "XMPP",
     "pubsub"
   ],
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.umd.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c ../../rollup.config.js"
+  },
   "engines": {
     "node": ">= 10.0.0",
     "yarn": ">= 1.0.0"
