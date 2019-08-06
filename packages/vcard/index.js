@@ -34,7 +34,9 @@ class VcardPlugin {
    */
   get(jid) {
     return this.iqCaller
-      .request(xml('iq', {type: 'get', to: jid}, xml('vCard', {xmlns: NS}, jid)))
+      .request(
+        xml('iq', {type: 'get', to: jid}, xml('vCard', {xmlns: NS}, jid))
+      )
       .then(r => parse(r).vCard)
   }
 
