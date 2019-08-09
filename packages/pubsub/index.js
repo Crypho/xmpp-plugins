@@ -181,7 +181,10 @@ class PubSubPlugin extends EventEmitter {
     if (rsm) {
       const rsmEl = xml('set', {xmlns: NS_RSM})
       for (const key of Object.keys(rsm)) {
-        rsmEl.c(key).t(rsm[key].toString())
+        const e = rsmEl.c(key)
+        if (rsm[key] !== null) {
+          e.t(rsm[key].toString())
+        }
       }
 
       stanza.up().cnode(rsmEl)
