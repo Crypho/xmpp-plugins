@@ -105,6 +105,18 @@ class RosterPlugin extends EventEmitter {
   start() {
     const {iqCallee} = this.client
     iqCallee.set(NS, 'query', context => {
+      // A receiving client MUST ignore the stanza unless it has no 'from'
+      // attribute (i.e., implicitly from the bare JID of the user's account)
+      // or it has a 'from' attribute whose value matches the user's bare
+      // JID <user@domainpart>.
+      if (context.from !== null) {
+        const myJid = context.entity.jid.bare()
+        const sendingJid = new JID(context.from).bare()
+        if (!sendingJid.equals(myJid)) {
+          return false
+        }
+      }
+
       const child = context.element
       const item = parseItem(child.getChild('item'))
       if (item.subscription === 'remove') {
