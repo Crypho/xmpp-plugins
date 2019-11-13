@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@xmpp/iq": "^0.7.0",
-    "@xmpp/middleware": "^0.7.0",
+    "@xmpp/middleware": "^0.8.0",
     "@xmpp/test": "^0.7.2"
   },
   "publishConfig": {
