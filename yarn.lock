@@ -1662,10 +1662,15 @@
     "@xmpp/middleware" "^0.7.4"
     "@xmpp/xml" "^0.7.4"
 
-"@xmpp/jid@^0.7.0", "@xmpp/jid@^0.7.4":
+"@xmpp/jid@^0.7.4":
   version "0.7.4"
   resolved "https://registry.yarnpkg.com/@xmpp/jid/-/jid-0.7.4.tgz#0d64547a0c005f74838540eecd4cfe05edeb6156"
   integrity sha512-yYpS5UWOvg1gN/D92SkTvs5apW+XxOM40apRRLGLJg5Wk46lYOTk/8WETsdhHKE2xxcfsIDp9Posr89NRdUW5A==
+
+"@xmpp/jid@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@xmpp/jid/-/jid-0.8.0.tgz#0bd0f74563728e0ec9fd2ebef425d7fd7538a9cb"
+  integrity sha512-Pwwqmz3zG/MMPLuWkVlNk54Wrh4kVa651//uQWkzyPYdzlXFt/nwC14PvSP16kGypI+J7xBaQEzqbzyu8Dve5g==
 
 "@xmpp/middleware@^0.7.0", "@xmpp/middleware@^0.7.4":
   version "0.7.4"
