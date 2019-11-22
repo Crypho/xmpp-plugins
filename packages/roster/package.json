@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@xmpp/events": "^0.7.0",
-    "@xmpp/iq": "^0.7.0",
+    "@xmpp/iq": "^0.9.0",
     "@xmpp/middleware": "^0.9.0",
     "@xmpp/test": "^0.9.0"
   },
