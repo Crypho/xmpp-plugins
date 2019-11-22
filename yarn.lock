@@ -1753,13 +1753,6 @@
   resolved "https://registry.yarnpkg.com/@xmpp/error/-/error-0.9.0.tgz#3232fab6fdb7a25fe67d3e0e1962ae8742b2f2da"
   integrity sha512-W8gqCwii+SmI8h1fx0HCFgfYMtrO0hjR2DeLHchn89F1x6o2fGisllLQ38vfCZWIqy3wXfLPuf5q6WM6nHe8gQ==
 
-"@xmpp/events@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@xmpp/events/-/events-0.7.0.tgz#c3c71dcfd4114d582ef95ef0e34373eaf1ce7a82"
-  integrity sha512-KdKxDJxivilbLEZzSRlup2nVr97MQpLuyMYZq/rMMdk8XafwvCKvNWqdfIYUvsFwWQdxbPW2hPoptYZwtdL9pg==
-  dependencies:
-    events "^3.0.0"
-
 "@xmpp/events@^0.9.0":
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/@xmpp/events/-/events-0.9.0.tgz#60d181390fc6b080f5487c6877c3a8fa25276d1a"
@@ -1905,13 +1898,6 @@
     "@xmpp/connection" "^0.9.0"
     "@xmpp/xml" "^0.9.0"
     ws "^7.0.0"
-
-"@xmpp/xml@^0.7.0":
-  version "0.7.4"
-  resolved "https://registry.yarnpkg.com/@xmpp/xml/-/xml-0.7.4.tgz#5a80650d7baf4f3ef576917f0e82800271e6248c"
-  integrity sha512-JbvPfvh85fgQsoeH2zhrj9t6jNoo5/FSLXQ+LueoPka6gojQSc0E7bEU2zeqV2x7VuyjK0aDeNH7q1ezBnkgHg==
-  dependencies:
-    ltx "^2.8.1"
 
 "@xmpp/xml@^0.9.0":
   version "0.9.0"
@@ -5151,7 +5137,7 @@ inflight@^1.0.4:
     once "^1.3.0"
     wrappy "1"
 
-inherits@2, inherits@^2.0.1, inherits@^2.0.3, inherits@~2.0.1, inherits@~2.0.3:
+inherits@2, inherits@^2.0.1, inherits@^2.0.3, inherits@^2.0.4, inherits@~2.0.1, inherits@~2.0.3:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
   integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
@@ -6045,11 +6031,11 @@ lru-cache@^5.1.1:
     yallist "^3.0.2"
 
 ltx@^2.8.1:
-  version "2.8.1"
-  resolved "https://registry.yarnpkg.com/ltx/-/ltx-2.8.1.tgz#5ab2770eb9e6d0a78dbed29416d706d8742b6658"
-  integrity sha512-l4H1FS9I6IVqwvIpUHsSgyxE6t2jP7qd/2MeVG1UhmVK6vlHsQpfm2KNUcbdImeE0ai04vl1qTCF4CPCJqhknQ==
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/ltx/-/ltx-2.9.2.tgz#222b28745142b71f66c566f20bb73648f82c0d86"
+  integrity sha512-llB7HflFhlfsYYT1SAe80elCBO5C20ryLdwPB/A/BZk38hhVeZztDlWQ9uTyvKNPX4aK6sA+JfS1f/mfzp5cxA==
   dependencies:
-    inherits "^2.0.1"
+    inherits "^2.0.4"
 
 macos-release@^2.2.0:
   version "2.3.0"
