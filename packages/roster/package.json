@@ -15,9 +15,9 @@
     "yarn": ">= 1.0.0"
   },
   "dependencies": {
-    "@xmpp/events": "^0.7.0",
+    "@xmpp/events": "^0.9.0",
     "@xmpp/jid": "^0.9.0",
-    "@xmpp/xml": "^0.7.0"
+    "@xmpp/xml": "^0.9.0"
   },
   "devDependencies": {
     "@xmpp/events": "^0.7.0",

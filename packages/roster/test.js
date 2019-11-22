@@ -2,7 +2,7 @@
 
 const test = require('ava')
 const setupRoster = require('.')
-const {context} = require('@xmpp/test')
+const {mockClient} = require('@xmpp/test')
 const JID = require('@xmpp/jid')
 const _middleware = require('@xmpp/middleware')
 const _iqCallee = require('@xmpp/iq/callee')
@@ -10,7 +10,7 @@ const _iqCaller = require('@xmpp/iq/caller')
 const {promise} = require('@xmpp/events')
 
 test.beforeEach(t => {
-  t.context = context()
+  t.context = mockClient()
   t.context.middleware = _middleware(t.context)
   t.context.iqCaller = _iqCaller(t.context)
   t.context.iqCallee = _iqCallee(t.context)

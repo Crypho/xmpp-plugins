@@ -2,7 +2,7 @@
 
 const test = require('ava')
 const setupPubsub = require('.')
-const {context} = require('@xmpp/test')
+const {mockClient} = require('@xmpp/test')
 const _middleware = require('@xmpp/middleware')
 const _iqCaller = require('@xmpp/iq/caller')
 const {promise} = require('@xmpp/events')
@@ -10,7 +10,7 @@ const {promise} = require('@xmpp/events')
 const SERVICE = 'pubsub.foo'
 
 test.beforeEach(t => {
-  t.context = context()
+  t.context = mockClient()
   t.context.middleware = _middleware(t.context)
   t.context.iqCaller = _iqCaller(t.context)
   t.context.plugin = setupPubsub(t.context)
