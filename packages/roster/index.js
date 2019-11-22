@@ -75,7 +75,11 @@ class RosterPlugin extends EventEmitter {
           xml(
             'query',
             {xmlns: NS},
-            xml('item', item, groups.map(g => xml('group', {}, g)))
+            xml(
+              'item',
+              item,
+              groups.map(g => xml('group', {}, g))
+            )
           )
         )
       )
