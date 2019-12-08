@@ -1766,28 +1766,28 @@
   integrity sha512-h7ycA0kDYM8fTObqtys92L3JTECnv6TUoUKP7Canq9xQP1k3K//ZMnMMFXc8NlU3Jl2U7V1Ny9zJlYM9gYv25w==
 
 "@xmpp/iq@^0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@xmpp/iq/-/iq-0.9.0.tgz#98e2792dc54f2c07dba9c3bb514f3b2ce88f95c4"
-  integrity sha512-mJL1cL3i+SYkcl8h8A/g4CKu8kJ/Gmcm4qx8nXQWgudSBX6EH3NCSTZqBU/auKLwMY+DFNjlyqGfOrnUxCTnlw==
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@xmpp/iq/-/iq-0.9.1.tgz#de0a2da796222ab28cfbc3d4d07dc7148f4b0b58"
+  integrity sha512-IXCby5CxcdcQcTJ/Dc6QkRK8AjIYBlMxmD23VD7uNeMYrnmSpvzgB6Hy2CCfYBrZPFtyo0cOF+tkKNMb0SQSMw==
   dependencies:
     "@xmpp/events" "^0.9.0"
     "@xmpp/id" "^0.9.0"
-    "@xmpp/middleware" "^0.9.0"
-    "@xmpp/xml" "^0.9.0"
+    "@xmpp/middleware" "^0.9.1"
+    "@xmpp/xml" "^0.9.1"
 
 "@xmpp/jid@^0.9.0":
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/@xmpp/jid/-/jid-0.9.0.tgz#0748b02e45ded26bc43ef912ee72e29790ac22da"
   integrity sha512-ZBQS8vNUDwhH0Xtrx5+SUnvQlLvpCJhG59BqlbJe6/6AWWCzclismKGMs7UkzkbnBUhNn0cGmeD4iKrsW96mCA==
 
-"@xmpp/middleware@^0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@xmpp/middleware/-/middleware-0.9.0.tgz#ea354d18aea2ac3cd3cd9eff7cd375717e0555f9"
-  integrity sha512-Xk3Oek+yDVAneaG0zdXcx/APST4I4nRK0eNRqZWwN5K2ZnFxv/v4HD1iroJ3m6YiTpvlHM/mtvJjpvRnVKgcMA==
+"@xmpp/middleware@^0.9.0", "@xmpp/middleware@^0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@xmpp/middleware/-/middleware-0.9.1.tgz#e0e55bf5fbfde6b68d4f66d47bcd5c42a37e55a5"
+  integrity sha512-Phk013PtVM/uJvfwB9+jRQ7R4pA7H/XDN1oatkllm1eb9OthhBedeLg45LV5mxrpQD6CkmJwAo3ijHe3LGYzow==
   dependencies:
     "@xmpp/error" "^0.9.0"
     "@xmpp/jid" "^0.9.0"
-    "@xmpp/xml" "^0.9.0"
+    "@xmpp/xml" "^0.9.1"
     koa-compose "^4.1.0"
 
 "@xmpp/reconnect@^0.9.0":
@@ -1899,10 +1899,10 @@
     "@xmpp/xml" "^0.9.0"
     ws "^7.0.0"
 
-"@xmpp/xml@^0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@xmpp/xml/-/xml-0.9.0.tgz#e9d97eb25f7810bcf5ab5c20e661845543b14f8c"
-  integrity sha512-rPchjmUxbN98St9LRFWq6V6mcmCQjEf5KNuHBJbfnDRuYu+BwvbgE9m7vntocuTIMc6AtPw8WW4JC2vV0W1MFw==
+"@xmpp/xml@^0.9.0", "@xmpp/xml@^0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@xmpp/xml/-/xml-0.9.1.tgz#14664ebad74967f20f03638f3ad18b6933e12b80"
+  integrity sha512-1603DMqNfSJ+0bVHph6AbxHZ49oTCmnKaZdhnhnKTKTnPy4YkJrL7sZSgVwWuy4kEDNJbxlnr4VubPU7l4wp2A==
   dependencies:
     ltx "^2.8.1"
 
