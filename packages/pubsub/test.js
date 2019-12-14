@@ -135,6 +135,39 @@ test('publish', t => {
   ])
 })
 
+test('get', t => {
+  t.context.scheduleIncomingResult(
+    <pubsub xmlns="http://jabber.org/protocol/pubsub">
+      <items node="foo">
+        <item id="fooitem">
+          <entry>Foo</entry>
+        </item>
+      </items>
+    </pubsub>
+  )
+  return Promise.all([
+    t.context.catchOutgoingGet().then(child =>
+      t.deepEqual(
+        child,
+        <pubsub xmlns="http://jabber.org/protocol/pubsub">
+          <items node="foo">
+            <item id="fooitem" />
+          </items>
+        </pubsub>
+      )
+    ),
+    t.context.plugin.get(SERVICE, 'foo', 'fooitem').then(item => {
+      item.parent = null
+      return t.deepEqual(
+        item,
+        <item id="fooitem">
+          <entry>Foo</entry>
+        </item>
+      )
+    }),
+  ])
+})
+
 test('items', t => {
   t.context.scheduleIncomingResult(
     <pubsub xmlns="http://jabber.org/protocol/pubsub">

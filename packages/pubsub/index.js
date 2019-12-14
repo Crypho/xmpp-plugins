@@ -161,6 +161,31 @@ class PubSubPlugin extends EventEmitter {
   }
 
   /**
+   * Fetch a single item from a pubsub node.
+   *
+   * @param {string} service Service id
+   * @param {string} node Pubsub node id
+   * @param {string} id Pubsub item id for the item to retrieve
+   * @returns {Promise<any>} The retrieved item, or `null` if the item does not exist
+   */
+  get(service, node, id) {
+    const {iqCaller} = this.client
+    const stanza = xml(
+      'pubsub',
+      {xmlns: NS_PUBSUB},
+      xml('items', {node}, xml('item', {id}))
+    )
+
+    return iqCaller
+      .request(xml('iq', {type: 'get', to: service}, stanza))
+      .then(result => {
+        const pubSubResult = result.getChild('pubsub')
+        const items = pubSubResult.getChild('items').children
+        return items.length > 0 ? items[0] : null
+      })
+  }
+
+  /**
    * @typedef {{[key: string]: string|number}} RSM
    */
   /**
@@ -172,7 +197,7 @@ class PubSubPlugin extends EventEmitter {
    * @param {string} service Service id
    * @param {string} node Pubsub node id
    * @param {RSM|undefined} rsm Result set management info
-   * @returns {ItemResult} List of items and RSM information
+   * @returns {Promise<ItemResult>} List of items and RSM information
    */
   items(service, node, rsm) {
     const {iqCaller} = this.client

@@ -60,6 +60,14 @@ console.log(`Published with id ${itemId}`)
 await pubSubPlugin.retract('service.example.com', 'nodeName', 'bnd81g37d61f49fgn581')
 ```
 
+### Retrieve a single item from the pubsub node.
+
+```js
+const item = await pubSubPlugin.get('service.example.com', 'nodeName', 'bnd81g37d61f49fgn581')
+console.log(item ? `Found your item: ${item}` : 'The item does not exist')
+```
+
+
 ### Return items from the pubsub node
 
 A basic call will return the last published items.
