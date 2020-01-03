@@ -1881,9 +1881,9 @@
     ws "^7.0.0"
 
 "@xmpp/xml@^0.9.0", "@xmpp/xml@^0.9.1":
-  version "0.9.1"
-  resolved "https://registry.yarnpkg.com/@xmpp/xml/-/xml-0.9.1.tgz#14664ebad74967f20f03638f3ad18b6933e12b80"
-  integrity sha512-1603DMqNfSJ+0bVHph6AbxHZ49oTCmnKaZdhnhnKTKTnPy4YkJrL7sZSgVwWuy4kEDNJbxlnr4VubPU7l4wp2A==
+  version "0.9.2"
+  resolved "https://registry.yarnpkg.com/@xmpp/xml/-/xml-0.9.2.tgz#7d02ba15820b81853833a86531abe3e0d1f9abd5"
+  integrity sha512-xhPT3/EtTK0gsOLYyYmvoQncof1EQnE8P2eVBtUy/3Mt5FKhZI+gNsTkn+ORYjgkyHWfupIa9pN0/m7A89TCdA==
   dependencies:
     ltx "^2.8.1"
 
