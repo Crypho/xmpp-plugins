@@ -1757,9 +1757,9 @@
     "@xmpp/xml" "^0.9.1"
 
 "@xmpp/jid@^0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@xmpp/jid/-/jid-0.9.0.tgz#0748b02e45ded26bc43ef912ee72e29790ac22da"
-  integrity sha512-ZBQS8vNUDwhH0Xtrx5+SUnvQlLvpCJhG59BqlbJe6/6AWWCzclismKGMs7UkzkbnBUhNn0cGmeD4iKrsW96mCA==
+  version "0.9.2"
+  resolved "https://registry.yarnpkg.com/@xmpp/jid/-/jid-0.9.2.tgz#2b87c466834e0618e226be4119b1d54fd828c7da"
+  integrity sha512-mCWUhs/2C2/qB75m4x4VEEDMvs7ymcqZFjnrtgA3/i005+NLBHeZzzHiEo0n+VWVuyEE/6wrOmI/U2LkCGkEMA==
 
 "@xmpp/middleware@^0.9.0", "@xmpp/middleware@^0.9.1":
   version "0.9.1"
