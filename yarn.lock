@@ -1756,19 +1756,19 @@
     "@xmpp/middleware" "^0.9.1"
     "@xmpp/xml" "^0.9.1"
 
-"@xmpp/jid@^0.9.0":
+"@xmpp/jid@^0.9.0", "@xmpp/jid@^0.9.2":
   version "0.9.2"
   resolved "https://registry.yarnpkg.com/@xmpp/jid/-/jid-0.9.2.tgz#2b87c466834e0618e226be4119b1d54fd828c7da"
   integrity sha512-mCWUhs/2C2/qB75m4x4VEEDMvs7ymcqZFjnrtgA3/i005+NLBHeZzzHiEo0n+VWVuyEE/6wrOmI/U2LkCGkEMA==
 
 "@xmpp/middleware@^0.9.0", "@xmpp/middleware@^0.9.1":
-  version "0.9.1"
-  resolved "https://registry.yarnpkg.com/@xmpp/middleware/-/middleware-0.9.1.tgz#e0e55bf5fbfde6b68d4f66d47bcd5c42a37e55a5"
-  integrity sha512-Phk013PtVM/uJvfwB9+jRQ7R4pA7H/XDN1oatkllm1eb9OthhBedeLg45LV5mxrpQD6CkmJwAo3ijHe3LGYzow==
+  version "0.9.2"
+  resolved "https://registry.yarnpkg.com/@xmpp/middleware/-/middleware-0.9.2.tgz#40b0a6b9ce5473524f46c0841eed30fcb7ca956e"
+  integrity sha512-ayvUm8+5gWQzq9iIh8YtzDENJAaZvIOSrmZtDfExKCewZlPSyqlMcMM96JqImyiIzXCj45q7qfaFmekZoYWt6g==
   dependencies:
     "@xmpp/error" "^0.9.0"
-    "@xmpp/jid" "^0.9.0"
-    "@xmpp/xml" "^0.9.1"
+    "@xmpp/jid" "^0.9.2"
+    "@xmpp/xml" "^0.9.2"
     koa-compose "^4.1.0"
 
 "@xmpp/reconnect@^0.9.0":
@@ -1880,7 +1880,7 @@
     "@xmpp/xml" "^0.9.1"
     ws "^7.0.0"
 
-"@xmpp/xml@^0.9.0", "@xmpp/xml@^0.9.1":
+"@xmpp/xml@^0.9.0", "@xmpp/xml@^0.9.1", "@xmpp/xml@^0.9.2":
   version "0.9.2"
   resolved "https://registry.yarnpkg.com/@xmpp/xml/-/xml-0.9.2.tgz#7d02ba15820b81853833a86531abe3e0d1f9abd5"
   integrity sha512-xhPT3/EtTK0gsOLYyYmvoQncof1EQnE8P2eVBtUy/3Mt5FKhZI+gNsTkn+ORYjgkyHWfupIa9pN0/m7A89TCdA==
