@@ -2051,10 +2051,22 @@
   dependencies:
     "@xmpp/xml" "^0.9.2"
 
+"@xmpp/error@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@xmpp/error/-/error-0.10.0.tgz#26854da0b4f990ef11ea7b45c7832619ba863291"
+  integrity sha512-udrt41xIZVwZGOWM+Mryinl11arHtTgEFz6JM26sYbXs/UuhXvx8D28S5ypNDiWEzH7vxBK8gOg9sxDCf7jjdw==
+
 "@xmpp/error@^0.9.0":
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/@xmpp/error/-/error-0.9.0.tgz#3232fab6fdb7a25fe67d3e0e1962ae8742b2f2da"
   integrity sha512-W8gqCwii+SmI8h1fx0HCFgfYMtrO0hjR2DeLHchn89F1x6o2fGisllLQ38vfCZWIqy3wXfLPuf5q6WM6nHe8gQ==
+
+"@xmpp/events@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@xmpp/events/-/events-0.10.0.tgz#011458ee06538de2ca690b2f66ee835d86a675c5"
+  integrity sha512-y1vrewZhQL3qNZwYpmqYwe3EvzB9o4H0gxXpMCckAxnHxnFE4AfzlIIrxdkdWsldIXjLdOz/oaNjb5POR2DO0g==
+  dependencies:
+    events "^3.1.0"
 
 "@xmpp/events@^0.9.0":
   version "0.9.0"
@@ -2063,12 +2075,27 @@
   dependencies:
     events "^3.0.0"
 
+"@xmpp/id@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@xmpp/id/-/id-0.10.0.tgz#6b25513fa76ff18a5c13d414b7faf0c88883797b"
+  integrity sha512-87BGmxBUogOlYjHMxEteBjB9eY1ugF9Gfkxv/0eoymmMkPSu2sqCEWFsVIagQI86Ff6jphX7mSpNJ+oJDXcfBg==
+
 "@xmpp/id@^0.9.0":
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/@xmpp/id/-/id-0.9.0.tgz#baee9afad8ab7c5a3f3b000b2f98c02ddef67674"
   integrity sha512-h7ycA0kDYM8fTObqtys92L3JTECnv6TUoUKP7Canq9xQP1k3K//ZMnMMFXc8NlU3Jl2U7V1Ny9zJlYM9gYv25w==
 
-"@xmpp/iq@^0.9.0", "@xmpp/iq@^0.9.2":
+"@xmpp/iq@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@xmpp/iq/-/iq-0.10.0.tgz#2bdb747803a948b6be9f4f22cb8047aef1f17d6b"
+  integrity sha512-FGFllYT3b8KpoHG3+d4LBS+FDEC6sGlxH9tEirbdZq38Hh0Hp3bOE1zG2hGe1xaOuTQINKs+L7cPB1OnOLZY4w==
+  dependencies:
+    "@xmpp/events" "^0.10.0"
+    "@xmpp/id" "^0.10.0"
+    "@xmpp/middleware" "^0.10.0"
+    "@xmpp/xml" "^0.10.0"
+
+"@xmpp/iq@^0.9.2":
   version "0.9.2"
   resolved "https://registry.yarnpkg.com/@xmpp/iq/-/iq-0.9.2.tgz#0a16cf672eb03a7b7358d74835f00cca3aca7113"
   integrity sha512-XCEuMj0JH41F7VgvKpF95lG4giXb/lyV0FbDmms3owCfWCEdaCxVJ8PzNZLq2rcUNCg/L1fvA+tUgZGqWMjnNw==
@@ -2078,10 +2105,25 @@
     "@xmpp/middleware" "^0.9.2"
     "@xmpp/xml" "^0.9.2"
 
+"@xmpp/jid@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@xmpp/jid/-/jid-0.10.0.tgz#ac154faa06c07fbe11718e2eb571803c3cd30b28"
+  integrity sha512-Hq9xFiW68HpCmnABHPB+qMz01Pw/sqxpaTm361pnlRsP/eFBcgI6hzFh39PNAehVNv8PZIkdET/8V0f9PXhnNg==
+
 "@xmpp/jid@^0.9.0", "@xmpp/jid@^0.9.2":
   version "0.9.2"
   resolved "https://registry.yarnpkg.com/@xmpp/jid/-/jid-0.9.2.tgz#2b87c466834e0618e226be4119b1d54fd828c7da"
   integrity sha512-mCWUhs/2C2/qB75m4x4VEEDMvs7ymcqZFjnrtgA3/i005+NLBHeZzzHiEo0n+VWVuyEE/6wrOmI/U2LkCGkEMA==
+
+"@xmpp/middleware@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@xmpp/middleware/-/middleware-0.10.0.tgz#d1cf0addfdda0ccb30f26e1502ed0d7ff21e99da"
+  integrity sha512-AabK/YzUaZpbBnWfKXbysOMLVExr8RtZApWcNaayXfEuAKJvKn5Xi9uI67gmX20R/XgXxHFjRDLk9Vvk0rBw0Q==
+  dependencies:
+    "@xmpp/error" "^0.10.0"
+    "@xmpp/jid" "^0.10.0"
+    "@xmpp/xml" "^0.10.0"
+    koa-compose "^4.1.0"
 
 "@xmpp/middleware@^0.9.0", "@xmpp/middleware@^0.9.2":
   version "0.9.2"
@@ -2202,6 +2244,13 @@
     "@xmpp/connection" "^0.9.2"
     "@xmpp/xml" "^0.9.2"
     ws "^7.0.0"
+
+"@xmpp/xml@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@xmpp/xml/-/xml-0.10.0.tgz#d57435510cb2af4a4f9ba8328157abd997a76adb"
+  integrity sha512-H/QKVdW7TejZWo2r3VJYkLNCEAyVCWIQEzEotjLsqAG+GFQxqJJVG7tOMPs0BTTGY/jWQ9eJMMI99USUAY/b+w==
+  dependencies:
+    ltx "^2.9.2"
 
 "@xmpp/xml@^0.9.0", "@xmpp/xml@^0.9.2":
   version "0.9.2"
@@ -4654,7 +4703,7 @@ events@^2.0.0:
   resolved "https://registry.yarnpkg.com/events/-/events-2.1.0.tgz#2a9a1e18e6106e0e812aa9ebd4a819b3c29c0ba5"
   integrity sha512-3Zmiobend8P9DjmKAty0Era4jV8oJ0yGYe2nJJAxgymF9+N8F2m0hhZiMoWtcfepExzNKZumFU3ksdQbInGWCg==
 
-events@^3.0.0:
+events@^3.0.0, events@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/events/-/events-3.1.0.tgz#84279af1b34cb75aa88bf5ff291f6d0bd9b31a59"
   integrity sha512-Rv+u8MLHNOdMjTAFeT3nCjHn2aGlx435FP/sDHNaRhDEMwyI/aB22Kj2qIN8R0cw3z28psEQLYwxVKLsKrMgWg==
@@ -6533,7 +6582,7 @@ lru-cache@^5.1.1:
   dependencies:
     yallist "^3.0.2"
 
-ltx@^2.8.1:
+ltx@^2.8.1, ltx@^2.9.2:
   version "2.9.2"
   resolved "https://registry.yarnpkg.com/ltx/-/ltx-2.9.2.tgz#222b28745142b71f66c566f20bb73648f82c0d86"
   integrity sha512-llB7HflFhlfsYYT1SAe80elCBO5C20ryLdwPB/A/BZk38hhVeZztDlWQ9uTyvKNPX4aK6sA+JfS1f/mfzp5cxA==

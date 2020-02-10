@@ -19,7 +19,7 @@
     "@xmpp/xml": "^0.9.0"
   },
   "devDependencies": {
-    "@xmpp/iq": "^0.9.0",
+    "@xmpp/iq": "^0.10.0",
     "@xmpp/middleware": "^0.9.0",
     "@xmpp/test": "^0.9.0"
   },
